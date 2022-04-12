@@ -1,0 +1,56 @@
+2022-03-03 21:20:03.828 INFO    numexpr.utils: NumExpr defaulting to 2 threads.
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.28.0.2:8501
+  External URL: http://35.189.175.59:8501
+
+  Stopping...
+2022-03-03 21:37:05.861 INFO    numexpr.utils: NumExpr defaulting to 2 threads.
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.28.0.2:8501
+  External URL: http://35.189.175.59:8501
+
+  Stopping...
+2022-03-03 21:49:13.603 INFO    numexpr.utils: NumExpr defaulting to 2 threads.
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.28.0.2:8501
+  External URL: http://35.189.175.59:8501
+
+  Stopping...
+2022-03-08 08:05:32.071 INFO    numexpr.utils: NumExpr defaulting to 2 threads.
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.28.0.2:8501
+  External URL: http://34.91.131.253:8501
+
+  Stopping...
+2022-04-10 07:36:35.439 INFO    numexpr.utils: NumExpr defaulting to 2 threads.
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.28.0.2:8501
+  External URL: http://35.194.174.86:8501
+
+2022-04-10 07:37:34.621 INFO    numexpr.utils: NumExpr defaulting to 2 threads.
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.28.0.2:8502
+  External URL: http://35.194.174.86:8502
+
+2022-04-10 07:44:53.562 An update to the [server] config option section was detected. To have these changes be reflected, please restart streamlit.
+  Stopping...
+  Stopping...
+2022-04-10 11:41:34.245 INFO    numexpr.utils: NumExpr defaulting to 2 threads.
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.28.0.2:8501
+  External URL: http://35.202.166.29:8501
+
