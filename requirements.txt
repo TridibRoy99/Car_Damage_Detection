@@ -1,0 +1,9 @@
+detectron2
+numpy
+os
+json
+cv2
+random
+matplotlib.pyplot
+skimage
+itertools
