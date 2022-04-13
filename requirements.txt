@@ -1,4 +1,6 @@
-git+https://github.com/facebookresearch/detectron2.git -f \https://dl.fbaipublicfiles.com/detectron2/wheels/cu113/torch1.10/index.html
+git+https://github.com/facebookresearch/detectron2.git
+https://download.pytorch.org/whl/cpu/torch-1.8.1%2Bcpu-cp37-cp37m-linux_x86_64.whl
+https://download.pytorch.org/whl/cpu/torchvision-0.9.1%2Bcpu-cp37-cp37m-linux_x86_64.whl
 mkl==2018
 torch==1.6.0
 torchvision==0.7.0
