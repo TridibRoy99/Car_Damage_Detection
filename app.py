@@ -26,8 +26,8 @@ with st.expander("Expand for details on the classification model!!"):
 name_cols=st.columns(2)
 car_url= name_cols[0].text_input("Insert an url to check car damage: ")
 # try:
- st.image(car_url,caption="Uploaded image")
- with st.spinner("Processing the image and loading necessary files....."):
+st.image(car_url,caption="Uploaded image")
+with st.spinner("Processing the image and loading necessary files....."):
    import Detector
    data = Detector.car_damage_detector(car_url)
    parts = data[0]
