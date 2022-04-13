@@ -1,4 +1,4 @@
-python -m pip install detectron2==0.6 -f \https://dl.fbaipublicfiles.com/detectron2/wheels/cu113/torch1.10/index.html
+pip install detectron2==0.6 -f \https://dl.fbaipublicfiles.com/detectron2/wheels/cu113/torch1.10/index.html
 mkl==2018
 torch==1.6.0
 torchvision==0.7.0
