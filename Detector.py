@@ -10,6 +10,8 @@ def car_damage_detector(car_url):
   import skimage.io as io
   from google.colab.patches import cv2_imshow
   import itertools
+  import urllib.request
+  import pickle
 
 
   # import some common detectron2 utilities
@@ -44,7 +46,7 @@ def car_damage_detector(car_url):
   cfg_mul.merge_from_file(model_zoo.get_config_file("COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml"))
   cfg_mul.MODEL.ROI_HEADS.NUM_CLASSES = 6  # only has five classes (headlamp,hood,rear_bumper,front_bumper_door) + 1
   cfg_mul.MODEL.RETINANET.NUM_CLASSES = 6 # only has five classes (headlamp,hood,rear_bumper,front_bumper_door) + 1
-  cfg_mul.MODEL.WEIGHTS = os.path.join("/content/gdrive/MyDrive/Car damage detection1/Final_model/part_segmentation_model_v3.pth")
+  cfg_mul.MODEL.WEIGHTS = urllib.request.urlopen("https://drive.google.com/file/d/1q-nqKSBYI5_RYGZSx-lrUMYVp3AaVIVo")
   cfg_mul.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.7 
   cfg_mul['MODEL']['DEVICE']='cpu' #or cpu
   part_predictor = DefaultPredictor(cfg_mul)
@@ -53,7 +55,7 @@ def car_damage_detector(car_url):
   cfg.merge_from_file(model_zoo.get_config_file("COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml"))
   cfg.MODEL.ROI_HEADS.NUM_CLASSES = 3  
   cfg.MODEL.RETINANET.NUM_CLASSES = 3 
-  cfg.MODEL.WEIGHTS = os.path.join("/content/gdrive/MyDrive/Car damage detection1/Final_model/severity_segmentation_model.pth")
+  cfg.MODEL.WEIGHTS = urllib.request.urlopen("https://drive.google.com/file/d/16RfLYWxECNOKtPJJ54qVzE23aMC6LIZd")
   cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.7
   cfg['MODEL']['DEVICE']='cpu'#or cuda
   severity_predictor = DefaultPredictor(cfg)
