@@ -7,3 +7,4 @@ random
 matplotlib.pyplot
 skimage
 itertools
+torch
