@@ -25,18 +25,18 @@ with st.expander("Expand for details on the classification model!!"):
 
 name_cols=st.columns(2)
 car_url= name_cols[0].text_input("Insert an url to check car damage: ")
-try:
-  st.image(car_url,caption="Uploaded image")
-  with st.spinner("Processing the image and loading necessary files....."):
-    import Detector
-    data = Detector.car_damage_detector(car_url)
-    parts = data[0]
-    extent = data[1]
-    st.success("Processing Completed!")
-    st.write("")
-    st.write("")
-    st.info("The model classification results are as follows:  ")
-    st.write(f"- Damaged Part detected close to {parts} area \n- The detected area seems to have {extent}\n\n")
-    st.image("car_damage.jpeg",caption="The Classified Damages on the Car")
-except:
-  st.text("Waiting for image....")
+# try:
+ st.image(car_url,caption="Uploaded image")
+ with st.spinner("Processing the image and loading necessary files....."):
+   import Detector
+   data = Detector.car_damage_detector(car_url)
+   parts = data[0]
+   extent = data[1]
+   st.success("Processing Completed!")
+   st.write("")
+   st.write("")
+   st.info("The model classification results are as follows:  ")
+   st.write(f"- Damaged Part detected close to {parts} area \n- The detected area seems to have {extent}\n\n")
+   st.image("car_damage.jpeg",caption="The Classified Damages on the Car")
+# except:
+#   st.text("Waiting for image....")
