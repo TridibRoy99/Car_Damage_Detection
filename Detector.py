@@ -35,8 +35,8 @@ def car_damage_detector(car_url):
   try:
     for d in ["val_1", "val_2", "val_3", "val_4"]:
         register_coco_instances(f"CarDamage1_{d}", {},
-                                f"/content/gdrive/MyDrive/Car damage detection1/Final_model/anno/{d}.json",
-                                f"/content/gdrive/MyDrive/Car damage detection1/Final_model/{d}")
+                                f"https://github.com/TridibRoy99/Car_Damage_Detection/tree/master/Final_model/anno/{d}.json",
+                                f"https://github.com/TridibRoy99/Car_Damage_Detection/tree/master/Final_model/{d}")
   except:
     print("dataset already registered")
   
